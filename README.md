@@ -2,7 +2,7 @@
 
 Project description here
 * Full stack application deployed to Heroku
-* Resume 
+* New Polished Resume 
 
 ![Site Picture]()  
 
@@ -12,7 +12,7 @@ Project description here
 |:-:|:-:|:-:|
 |[Project Introduction](#full-stack) | [Table of Contents](#table-of-contents)| [Development Highlights](development-highlights)
 |[Heroku](#heroku-deployed) | [Description of Page Building](#Description-of-Page-Building)| [Author](#author) 
-| [Technologies Used](#Technologies-Used) | [LinkedIn](#LinkedIn) | [License](#License)
+| [Technologies Used](#Technologies-Used) | [License](#License)
 
 ---
 
@@ -24,30 +24,33 @@ Project description here
 [Deployed Link]()
 
 ## Description of Page Building 
-* In one file
+* In public folder
    <ul> 
-  <li> 
-  <li> 
-  <li> 
+  <li> Css folder that has pictures and style.css to decorate the interface
+  <li> Js file, a client-side javascript to active the button when clicked, and send signal to the back end
+  <li> Html files waiting to be serverd when the routes is called 
   </li>
   </ul>
 
-* In another 
+- In routes folder to handle when the user "visit" the page
   <ul> 
-  <li> 
-  <li> 
-  <li> 
+  <li> Html routes that serve up the html page when client calls
+  <li> API routes to serve up JSON object use to populate the page 
   </li>
   </ul>
 
 
-* In another file 
-  <ul> 
-  <li> 
-  <li> 
-  <li> 
+
+* In server.js file
+   <ul> 
+  <li> Requiring necessary npm packages
+  <li> Setting up port and requiring models for syncing
+  <li> Creating express app and configuring middleware needed for authentication
+  <li> Requiring our routes
+  <li> Listen to port to activate the server 
   </li>
-   </ul>
+  </ul>
+
 
 
 
@@ -55,17 +58,32 @@ Project description here
 
 Required variables 
 ``` Javascript
-
+var express = require("express");
+var path = require("path");
 ```
 
 Sets up the Express app to handle data parsing
 ``` Javascript
-
+var app = express();
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static("public"));
 ```
 
 Set routes to handle when user "visit" the page 
 ``` Javascript
-
+module.exports = function (app,path) {
+  var path = require("path");
+  app.get("/", (req,res)=>{
+    res.sendFile("/index.html",{ root: path.join(__dirname, "./public") })
+  });
+  app.get("/projects",(req,res)=>{
+    res.sendFile("./projects.html",{root: path.join(__dirname, "../public")})
+  });
+  app.get("/aboutme", (req,res)=>{
+    res.sendFile("./BTVu.html",{root: path.join(__dirname, "../public")})
+  });
+}
 ```
 
 do this because 
@@ -77,8 +95,7 @@ do this because
 
 ||||||
 |:-:|:-:|:-:|:-:|:-:|
-|[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) | [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) | [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |[Node.js](https://nodejs.org/en/) |
-|[Express](https://expressjs.com/)| [Heroku](https://heroku.com/) | [GitHub](https://github.com/)
+|[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) | [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) | [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |[Node.js](https://nodejs.org/en/) |[Express](https://expressjs.com/)| [Heroku](https://heroku.com/) | [GitHub](https://github.com/)
 
 <br>
 
@@ -86,10 +103,8 @@ do this because
 
 | | |
 | --- | --- |
-|**B Tram Vu**|[![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/b-tram-vu-866250121/)  [![GitHub](https://i.stack.imgur.com/tskMh.png) GitHub](https://github.com/vubao2303)
-|**Jaja Brown**|[![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/jaja-brown-a42261201/) [![GitHub](https://i.stack.imgur.com/tskMh.png) GitHub](https://github.com/jbrown827)
-|**Ron-Arjay Caluag**|[![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/ron-arjay-caluag-00b29b182/) [![GitHub](https://i.stack.imgur.com/tskMh.png) GitHub](https://github.com/ArjayCaluag)
-|**Coleman Buffa**|[![Linkedin](https://i.stack.imgur.com/gVE0j.png) [LinkedIn](hhttps://www.linkedin.com/in/coleman-buffa/) [![GitHub](https://i.stack.imgur.com/tskMh.png) GitHub](https://github.com/coleman-buffa)
+|**B Tram Vu**|[![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/b-tram-vu-866250121/) | [![GitHub](https://i.stack.imgur.com/tskMh.png) GitHub](https://github.com/vubao2303) | [![Portfolio](https://i.stack.imgur.com/gVE0j.png) Portfolio](https://www.linkedin.com/in/b-tram-vu-866250121/)
+
 
 ---
 
