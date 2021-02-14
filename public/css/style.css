@@ -1,0 +1,173 @@
+#social-em a {
+  background-color: #333;
+}
+#social-em {
+  color:  #333;
+}
+#social-em:hover {
+  color: #f39c12;
+}
+.social {
+  padding: 15px;
+}
+.fa-envelope {
+  font-size: 70px;
+}
+
+/* making the LEter hover on top of img */
+.container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color: orangered;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+/* style footer  */
+.footer-link {
+  padding:0.3em;
+}
+footer {
+  position: sticky;
+  position: -webkit-sticky; 
+  position: sticky;
+  bottom: 0px;
+  background:rgb(150, 196, 205);
+  height:60px; 
+  font-size: 20px;
+}
+
+/* style nava bar */
+.navbar {
+  background-color: #333;
+}
+/* 
+.three-pictures {
+  width: 80%;
+  left:20%;
+} */
+
+/* .index-image {
+  width: 100%;
+  height: 40vw;
+  object-fit: cover;
+} */
+
+/* #index-footer {
+  font-size: 30px;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;   /* Height of the footer */
+  /* background:rgb(150, 196, 205);
+} */
+body {
+  /* background: rgb(190, 204, 207); */
+  background-image: url("./pictures/background.jpg");
+}
+h2 { 
+  color: black;
+  font-family: Fantasy;
+  font-weight: bold;
+  font-family: 'Chelsea Market', cursive;
+}
+/* styling project page */
+h1 {
+  -webkit-text-stroke: 1px black;
+  color: white;
+  text-shadow:
+      3px 3px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+.p-description {
+  background-color: thistle;
+  padding: 20px;
+  text-indent: 10%;
+}
+
+
+/* My WOrk and ABOUT ME BUTTON */
+
+.button-rounded-hover {
+  border: 0;
+  border-radius: 5000px;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  transition: all 0.35s ease;
+
+  background: #29c6de;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.button-rounded-hover:before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-radius: inherit;
+  background-color: #fefefe;
+  transition: all 0.3s;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.button-rounded-hover:after {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border: 5px solid #452b83;
+  content: '';
+  border-radius: inherit;
+}
+.button-rounded-hover:hover,
+.button-rounded-hover:focus {
+  background-color: #40d2bc;
+}
+.button-rounded-hover:hover:before,
+.button-rounded-hover:focus:before {
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 0.25;
+}
+.about-me-page {
+  width: 80%;
+}

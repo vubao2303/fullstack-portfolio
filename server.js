@@ -1,7 +1,7 @@
 // Requiring necessary npm packages
 // *** Dependencies
 let express = require("express");
-
+var path = require("path");
 
 // Setting up port and requiring models for syncing
 let PORT = process.env.PORT || 2303;
@@ -15,7 +15,7 @@ app.use(express.static("public"));
 
 // Requiring routes
 require("./routes/html-routes.js")(app);
-require("./routes/api-routes.js")(app);
+// require("./routes/api-routes.js")(app);
 
 // Starting our Express app
 // =============================================================
