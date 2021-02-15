@@ -1,13 +1,15 @@
 $(document).ready(function () {
-  $("#project-btn").on("click",(event)=>{
-    $.get("/projects").then(function(){
-    window.location.replace()
+  $("#projects-btn").on("click",()=>{
+    // $.get("/projects").then(function(){
+    window.location.replace("/projects")
   });
-  $("#about-me").on("click",(event)=>{
+  $("#about-me").on("click",()=>{
     // $.get("/aboutme")
     window.location.replace("/aboutme")
   })
-})
+  $("#kb-link").on("click", ()=>{
+    window.location.replace("https://github.com/vubao2303/big-burger")
+  })
 })
 
 

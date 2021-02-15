@@ -1,13 +1,13 @@
 // Requiring necessary npm packages
 // *** Dependencies
-let express = require("express");
+var express = require("express");
 var path = require("path");
 
 // Setting up port and requiring models for syncing
-let PORT = process.env.PORT || 2303;
+var PORT = process.env.PORT || 2303;
 
 // Creating express app and configuring middleware needed for authentication
-let app = express();
+var app = express();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
