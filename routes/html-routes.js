@@ -28,7 +28,5 @@ module.exports = function (app,path) {
   });
   app.get("/aboutme", (req,res)=>{
     res.sendFile("./BTVu.html",{root: path.join(__dirname, "../public")})
-    
   });
-
 }
