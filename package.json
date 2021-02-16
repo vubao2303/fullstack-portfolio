@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "config.json": "0.0.4",
     "express": "^4.17.1",
     "nodemon": "^2.0.7",
     "path": "^0.12.7"

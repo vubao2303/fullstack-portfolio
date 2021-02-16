@@ -1,18 +1,17 @@
 # fullstack-portfolio
 
-Project description here
+Project description 
 * Full stack application deployed to Heroku
 * New Polished Resume 
 
-![Site Picture]()  
+![Site Picture](public/css/pictures/readme.png)  
 
 ## Table of Contents 
 
 | |||
 |:-:|:-:|:-:|
-|[Project Introduction](#full-stack) | [Table of Contents](#table-of-contents)| [Development Highlights](development-highlights)
-|[Heroku](#heroku-deployed) | [Description of Page Building](#Description-of-Page-Building)| [Author](#author) 
-| [Technologies Used](#Technologies-Used) | [License](#License)
+|[Project Introduction](#fullstack-portfolio) | [Table of Contents](#table-of-contents) | [Heroku](#heroku-deployed) |  [Description of Page Building](#Description-of-Page-Building)| [Code Snippets](#code-snippet) 
+| [Technologies Used](#Technologies-Used) |  [Author](#author) | [License](#License)
 
 ---
 
@@ -86,8 +85,11 @@ module.exports = function (app,path) {
 }
 ```
 
-do this because 
+Listen to port to activate the page
 ``` Javascript 
+app.listen(PORT, function() {
+  console.log("App listening on PORT " + PORT);
+});
 
 ```
 
@@ -99,7 +101,7 @@ do this because
 
 <br>
 
-## Authors
+## Author
 
 | | |
 | --- | --- |
