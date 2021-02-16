@@ -98,12 +98,17 @@ h1 {
       1px 1px 0 #000;
 }
 .p-description {
-  background-color: thistle;
+  background-color: #f7f7f7;
   padding: 20px;
   text-indent: 10%;
+  
 }
 
-
+.dropdown-toggle{
+  background-color: rgb(127, 175, 177);
+  font-weight: bold;
+  color: rgb(33, 29, 29);
+}
 /* My WOrk and ABOUT ME BUTTON */
 
 .button-rounded-hover {
@@ -164,4 +169,33 @@ h1 {
 /* view button */
 .view-btn {
   background-color: lightseagreen;
+}
+
+/* testing  */
+div.container4 {
+  height: 10em;
+  position: relative }
+div.container4 p {
+  margin: 0;
+  background: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) }
+
+  html { 
+    background: url(images/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  body {
+    background-image: linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)), url("./pictures/background.jpg");;
+    
+    height: 1000px;
+    background-position: center;
+    background-size: cover;
 }
