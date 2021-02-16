@@ -63,6 +63,13 @@ footer {
   font-size: 20px;
 }
 
+#project-footer{
+  
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   
+}
 /* style nava bar */
 .navbar {
   background-color: #333;
@@ -71,6 +78,7 @@ footer {
 body {
   /* background: rgb(190, 204, 207); */
   background-image: url("./pictures/background.jpg");
+  
 }
 h2 { 
   color: black;
@@ -102,6 +110,9 @@ h1 {
   padding: 20px;
   text-indent: 10%;
   
+}
+.dropdown-menu{
+  background-color: #f7f7f7;
 }
 
 .dropdown-toggle{
@@ -192,10 +203,35 @@ div.container4 p {
     background-size: cover;
   }
 
-  body {
+  /* body {
     background-image: linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)), url("./pictures/background.jpg");;
-    
     height: 1000px;
     background-position: center;
     background-size: cover;
+    background-repeat: repeat;
+} */
+
+/* make arrows black */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
 }
