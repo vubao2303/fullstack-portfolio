@@ -20,7 +20,7 @@ Project description
 
 ## Heroku-Deployed
 
-[Deployed Link]()
+[Deployed Link](https://vu-portfolio.herokuapp.com/)
 
 ## Description of Page Building 
 * In public folder
