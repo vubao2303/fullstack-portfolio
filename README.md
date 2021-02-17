@@ -15,9 +15,6 @@ Project description
 
 ---
 
-## Development Highlights
-
-
 ## Heroku-Deployed
 
 [Deployed Link](https://vu-portfolio.herokuapp.com/)
