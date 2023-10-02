@@ -17,7 +17,7 @@ Project description
 
 ## Heroku-Deployed
 
-[Deployed Link](https://vu-portfolio.herokuapp.com/)
+[Deployed Link](https://btramvu-81a37f6ad800.herokuapp.com/)
 
 ## Description of Page Building 
 * In public folder
